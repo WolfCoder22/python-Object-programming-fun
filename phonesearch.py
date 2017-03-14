@@ -46,6 +46,7 @@ class phonesearch:
             return phone
         else:
             print("Phone number not found with ID- "+id)
+            return False
 
 
     def searchID(self, phoneOrg):
@@ -76,6 +77,7 @@ class phonesearch:
                     return id.group(0)
 
         print("UserId not found with phone number- " + phoneOrg)
+        return False
 
     def getAll(self):
         toRead = open(self.file, "r")
@@ -89,7 +91,7 @@ class phonesearch:
             id= iDandPhone[0]
             phone= iDandPhone[1]
 
-            print("Found id-"+id+"- with phone, "+phone+ "\n")
+            print("Found id-"+id+"- with phone, "+phone)
 
             #add to hashtables
             self.idHash[phone] = id
@@ -107,7 +109,7 @@ def checkIfPhoneFound(self, id):
     if phone== None:
         return False
     else:
-        print('phone was found in hashtable\n')
+        print('phone was found in hashtable')
         return phone
 
 #return id if already found
@@ -116,7 +118,7 @@ def checkIfIdFound(self, phone):
     if id== None:
         return False
     else:
-        print('id was found in hashtable\n')
+        print('id was found in hashtable')
         return id
 
 # makeTextDoc('searchTestFile', 25)
