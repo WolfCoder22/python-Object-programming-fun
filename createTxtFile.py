@@ -27,8 +27,7 @@ def makeTextDoc(outFile, numPhones) :
         phone= checkUniqueNum(phoneSet, phone)
 
         line= id+', '+phone
-        if i!= numPhones-1:
-            line= line+'\n' #don't add new line on last
+        line= line+'\n' #don't add new line on last
         out.write(line)
     out.close()
 
@@ -73,9 +72,9 @@ def makePhoneNum():
 
 
 #driver for function
-# makeTextDoc("testFile1", 10)
-# makeTextDoc("testFile2", 100)
-# makeTextDoc("testFile3", 10000)
-# makeTextDoc("testFile4", 9999999999)
+# makeTextDoc("testFile1.txt", 10)
+# makeTextDoc("testFile2.txt", 100)
+# makeTextDoc("testFile3.txt", 10000)
+# makeTextDoc("testFile4.txt", 9999999999)
 
-
+makeTextDoc("searchTestFile.txt", 25)
