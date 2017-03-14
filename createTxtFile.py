@@ -73,9 +73,9 @@ def makePhoneNum():
 
 
 #driver for function
-makeTextDoc("testFile1", 10)
-makeTextDoc("testFile2", 100)
-makeTextDoc("testFile3", 10000)
-makeTextDoc("testFile4", 9999999999)
+# makeTextDoc("testFile1", 10)
+# makeTextDoc("testFile2", 100)
+# makeTextDoc("testFile3", 10000)
+# makeTextDoc("testFile4", 9999999999)
 
 
